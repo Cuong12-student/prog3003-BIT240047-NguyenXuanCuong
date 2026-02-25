@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- JDBC -->
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/jpa_items?useSSL=false
+        </property>
+
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">Cuong124@</property>
+
+        <!-- Hibernate -->
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Entity -->
+        <mapping class="Product"/>
+
+    </session-factory>
+</hibernate-configuration>
+
+va
