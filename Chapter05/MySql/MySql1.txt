@@ -1,0 +1,12 @@
+CREATE DATABASE jdbc_users;
+USE jdbc_users;
+
+CREATE TABLE nguoidung (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(100),
+    email VARCHAR(100)
+);
+insert into nguoidung(username,email) values
+("Nguyen Xuan Cuong","n@gmail.com"),
+("Khanh Linh","l@gmail.com"),
+("Tung Duong","d@gmail.com")'

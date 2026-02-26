@@ -1,0 +1,8 @@
+CREATE DATABASE jpa_items;
+USE jpa_items;
+
+CREATE TABLE products (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nameItem VARCHAR(100),
+    price DOUBLE
+);
